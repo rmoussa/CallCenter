@@ -21,4 +21,10 @@ export class HttpUtilsService {
 			headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 		};
 	}
+
+	getHTTPHeaders(): HttpHeaders {
+		const result = new HttpHeaders();
+		result.set('Content-Type', 'application/json');
+		return result;
+	}
 }

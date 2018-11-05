@@ -41,20 +41,25 @@ export class MenuConfig implements ConfigModel {
 												root: true,
 												submenu: [
 													{
-														title: 'Create New Post',
-														tooltip: 'Non functional dummy link',
+														title:
+															'Create New Post',
+														tooltip:
+															'Non functional dummy link'
 													},
 													{
 														title: 'Timesheet',
-														tooltip: 'Non functional dummy link',
+														tooltip:
+															'Non functional dummy link'
 													},
 													{
 														title: 'Payroll',
-														tooltip: 'Non functional dummy link',
+														tooltip:
+															'Non functional dummy link'
 													},
 													{
 														title: 'Contacts',
-														tooltip: 'Non functional dummy link',
+														tooltip:
+															'Non functional dummy link'
 													}
 												]
 											}
@@ -68,7 +73,7 @@ export class MenuConfig implements ConfigModel {
 									badge: {
 										type: 'm-badge--success',
 										value: '2'
-									},
+									}
 								},
 								{
 									title: 'Manage Orders',
@@ -80,33 +85,39 @@ export class MenuConfig implements ConfigModel {
 										items: [
 											{
 												title: 'Latest Orders',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Pending Orders',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Processed Orders',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Delivery Reports',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Payments',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Customers',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											}
 										]
 									}
@@ -122,28 +133,33 @@ export class MenuConfig implements ConfigModel {
 										items: [
 											{
 												title: 'Customer Feedbacks',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Supplier Feedbacks',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Reviewed Feedbacks',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Resolved Feedbacks',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											},
 											{
 												title: 'Feedback Reports',
-												tooltip: 'Non functional dummy link',
-												icon: '',
+												tooltip:
+													'Non functional dummy link',
+												icon: ''
 											}
 										]
 									}
@@ -151,7 +167,7 @@ export class MenuConfig implements ConfigModel {
 								{
 									title: 'Register Member',
 									tooltip: 'Non functional dummy link',
-									icon: 'flaticon-users',
+									icon: 'flaticon-users'
 								}
 							]
 						}
@@ -170,33 +186,38 @@ export class MenuConfig implements ConfigModel {
 								{
 									heading: {
 										heading: true,
-										title: 'Finance Reports',
+										title: 'Finance Reports'
 									},
 									items: [
 										{
 											title: 'Annual Reports',
-											tooltip: 'Non functional dummy link',
-											icon: 'flaticon-map',
+											tooltip:
+												'Non functional dummy link',
+											icon: 'flaticon-map'
 										},
 										{
 											title: 'HR Reports',
-											tooltip: 'Non functional dummy link',
-											icon: 'flaticon-user',
+											tooltip:
+												'Non functional dummy link',
+											icon: 'flaticon-user'
 										},
 										{
 											title: 'IPO Reports',
-											tooltip: 'Non functional dummy link',
-											icon: 'flaticon-clipboard',
+											tooltip:
+												'Non functional dummy link',
+											icon: 'flaticon-clipboard'
 										},
 										{
 											title: 'Finance Margins',
-											tooltip: 'Non functional dummy link',
-											icon: 'flaticon-graphic-1',
+											tooltip:
+												'Non functional dummy link',
+											icon: 'flaticon-graphic-1'
 										},
 										{
 											title: 'Revenue Reports',
-											tooltip: 'Non functional dummy link',
-											icon: 'flaticon-graphic-2',
+											tooltip:
+												'Non functional dummy link',
+											icon: 'flaticon-graphic-2'
 										}
 									]
 								},
@@ -204,39 +225,45 @@ export class MenuConfig implements ConfigModel {
 									bullet: 'line',
 									heading: {
 										heading: true,
-										title: 'Project Reports',
+										title: 'Project Reports'
 									},
 									items: [
 										{
 											title: 'Coca Cola CRM',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title:
 												'Delta Airlines Booking Site',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Malibu Accounting',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Vineseed Website Rewamp',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Zircon Mobile App',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Mercury CMS',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										}
 									]
 								},
@@ -244,38 +271,44 @@ export class MenuConfig implements ConfigModel {
 									bullet: 'dot',
 									heading: {
 										heading: true,
-										title: 'HR Reports',
+										title: 'HR Reports'
 									},
 									items: [
 										{
 											title: 'Staff Directory',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Client Directory',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Salary Reports',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Staff Payslips',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Corporate Expenses',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Project Expenses',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										}
 									]
 								},
@@ -283,38 +316,44 @@ export class MenuConfig implements ConfigModel {
 									heading: {
 										heading: true,
 										title: 'Reporting Apps',
-										icon: '',
+										icon: ''
 									},
 									items: [
 										{
 											title: 'Report Adjusments',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Sources & Mediums',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Reporting Settings',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Conversions',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Report Flows',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										},
 										{
 											title: 'Audit & Logs',
-											tooltip: 'Non functional dummy link',
-											icon: '',
+											tooltip:
+												'Non functional dummy link',
+											icon: ''
 										}
 									]
 								}
@@ -330,7 +369,7 @@ export class MenuConfig implements ConfigModel {
 						badge: {
 							type: 'm-badge--brand m-badge--wide',
 							value: 'new',
-							translate: 'MENU.NEW',
+							translate: 'MENU.NEW'
 						},
 						submenu: {
 							type: 'classic',
@@ -345,18 +384,21 @@ export class MenuConfig implements ConfigModel {
 										items: [
 											{
 												title: 'Customers',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-users',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-users'
 											},
 											{
 												title: 'Orders',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-interface-1',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-interface-1'
 											},
 											{
 												title: 'Products',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-list-1',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-list-1'
 											}
 										]
 									}
@@ -371,28 +413,33 @@ export class MenuConfig implements ConfigModel {
 										items: [
 											{
 												title: 'Active Users',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-users',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-users'
 											},
 											{
 												title: 'User Explorer',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-interface-1',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-interface-1'
 											},
 											{
 												title: 'Users Flows',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-lifebuoy',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-lifebuoy'
 											},
 											{
 												title: 'Market Segments',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-graphic-1',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-graphic-1'
 											},
 											{
 												title: 'User Reports',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-graphic',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-graphic'
 											}
 										]
 									}
@@ -400,7 +447,7 @@ export class MenuConfig implements ConfigModel {
 								{
 									title: 'Marketing',
 									tooltip: 'Non functional dummy link',
-									icon: 'flaticon-map',
+									icon: 'flaticon-map'
 								},
 								{
 									title: 'Campaigns',
@@ -421,7 +468,8 @@ export class MenuConfig implements ConfigModel {
 										items: [
 											{
 												title: 'File Upload',
-												tooltip: 'Non functional dummy link',
+												tooltip:
+													'Non functional dummy link',
 												icon: 'flaticon-add',
 												badge: {
 													type: 'm-badge--danger',
@@ -430,18 +478,21 @@ export class MenuConfig implements ConfigModel {
 											},
 											{
 												title: 'File Attributes',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-signs-1',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-signs-1'
 											},
 											{
 												title: 'Folders',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-folder',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-folder'
 											},
 											{
 												title: 'System Settings',
-												tooltip: 'Non functional dummy link',
-												icon: 'flaticon-cogwheel-2',
+												tooltip:
+													'Non functional dummy link',
+												icon: 'flaticon-cogwheel-2'
 											}
 										]
 									}
@@ -460,10 +511,31 @@ export class MenuConfig implements ConfigModel {
 						root: true,
 						icon: 'flaticon-line-graph',
 						page: '/',
-						badge: {type: 'm-badge--danger', value: '2'},
+						badge: { type: 'm-badge--danger', value: '2' },
 						translate: 'MENU.DASHBOARD'
 					},
-					{section: 'Tools'},
+					{
+						title: 'Call Center',
+						desc: 'Create and Manage Order',
+						root: true,
+						icon: 'flaticon-edit-1',
+						page: '/callcenter'
+					},
+					{section: 'Master Data'},
+					{
+						title: 'Lookups',
+						root: true,
+						bullet: 'dot',
+						icon: 'flaticon-web',
+						submenu: [
+							{
+								title: 'Units',
+								page: '/lookups/unit'
+							}
+						]
+					},
+
+					{ section: 'Tools' },
 					{
 						title: 'Layout Builder',
 						root: true,

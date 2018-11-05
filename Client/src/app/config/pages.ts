@@ -24,6 +24,14 @@ export class PagesConfig implements ConfigModel {
 			},
 			404: {
 				page: { title: '404 Not Found', desc: '', subheader: false }
+			},
+			callcenter: {
+				page: { title: 'Call Center', desc: 'Create & Manage Order' } // <= Page name and description
+			},
+			lookups: {
+				unit: {
+					page: { title: 'Units', desc: '' }
+				}
 			}
 		};
 	}

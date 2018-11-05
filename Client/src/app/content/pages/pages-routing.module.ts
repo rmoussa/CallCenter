@@ -5,7 +5,8 @@ import { ActionComponent } from './header/action/action.component';
 import { NgxPermissionsGuard } from 'ngx-permissions';
 import { ProfileComponent } from './header/profile/profile.component';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
-import { InnerComponent } from "./components/inner/inner.component";
+import { InnerComponent } from './components/inner/inner.component';
+import { CallCenterComponent } from './call-center/call-center.component';
 
 const routes: Routes = [
 	{
@@ -23,7 +24,8 @@ const routes: Routes = [
 		children: [
 			{
 				path: '',
-				loadChildren: './components/dashboard/dashboard.module#DashboardModule'
+				loadChildren:
+					'./components/dashboard/dashboard.module#DashboardModule'
 			},
 			{
 				path: 'builder',
@@ -41,6 +43,14 @@ const routes: Routes = [
 				path: 'inner',
 				component: InnerComponent
 			},
+			{
+				path: 'callcenter',
+				component: CallCenterComponent
+			},
+			{
+				path: 'lookups',
+				loadChildren: './lookups/lookups.module#LookupsModule'
+			}
 		]
 	},
 	{
@@ -51,7 +61,7 @@ const routes: Routes = [
 			permissions: {
 				except: 'ADMIN'
 			}
-		},
+		}
 	},
 	{
 		path: '404',
@@ -60,12 +70,11 @@ const routes: Routes = [
 	{
 		path: 'error/:type',
 		component: ErrorPageComponent
-	},
+	}
 ];
 
 @NgModule({
 	imports: [RouterModule.forChild(routes)],
 	exports: [RouterModule]
 })
-export class PagesRoutingModule {
-}
+export class PagesRoutingModule {}
