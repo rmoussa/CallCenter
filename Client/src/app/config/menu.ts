@@ -521,7 +521,7 @@ export class MenuConfig implements ConfigModel {
 						icon: 'flaticon-edit-1',
 						page: '/callcenter'
 					},
-					{section: 'Master Data'},
+					{ section: 'Master Data' },
 					{
 						title: 'Lookups',
 						root: true,
@@ -531,6 +531,51 @@ export class MenuConfig implements ConfigModel {
 							{
 								title: 'Units',
 								page: '/lookups/unit'
+							},
+							{
+								title: 'Branches',
+								page: '/lookups/branch'
+							},
+							{
+								title: 'Customers',
+								page: '/lookups/customer'
+							},
+							{
+								title: 'Employees',
+								page: '/lookups/employee'
+							},
+							{
+								title: 'Call Center Sources',
+								page: '/lookups/call-center-source'
+							},
+							{
+								title: 'Product Cat1',
+								page: '/lookups/product-cat1'
+							},
+							{
+								title: 'Product Cat2',
+								page: '/lookups/product-cat2'
+							},
+							{
+								title: 'Product Cat3',
+								page: '/lookups/product-cat3'
+							},
+							{
+								title: 'Product Cat4',
+								page: '/lookups/product-cat4'
+							}
+						]
+					},
+					{ section: 'Reports' },
+					{
+						title: 'Sales Reports',
+						root: true,
+						bullet: 'dot',
+						icon: 'flaticon-line-graph',
+						submenu: [
+							{
+								title: 'Drivers Sales',
+								page: '/reports/driversSales'
 							}
 						]
 					},

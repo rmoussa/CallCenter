@@ -31,6 +31,35 @@ export class PagesConfig implements ConfigModel {
 			lookups: {
 				unit: {
 					page: { title: 'Units', desc: '' }
+				},
+				branch: {
+					page: { title: 'Branches', desc: '' }
+				},
+				customer: {
+					page: { title: 'Customers', desc: '' }
+				},
+				employee: {
+					page: { title: 'Employees', desc: '' }
+				},
+				'call-center-source': {
+					page: { title: 'Call Center Sources', desc: '' }
+				},
+				'product-cat1': {
+					page: { title: 'Product Cat1', desc: '' }
+				},
+				'product-cat2': {
+					page: { title: 'Product Cat2', desc: '' }
+				},
+				'product-cat3': {
+					page: { title: 'Product Cat3', desc: '' }
+				},
+				'product-cat4': {
+					page: { title: 'Product Cat4', desc: '' }
+				}
+			},
+			reports: {
+				'driver-reports': {
+					page: { title: 'Driver Reports', desc: '' }
 				}
 			}
 		};

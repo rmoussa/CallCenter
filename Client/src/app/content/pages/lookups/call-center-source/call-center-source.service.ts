@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { CallCenterSource } from '../models/call-center-source';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CallCenterSourceService {
+	constructor(private http: HttpClient) {}
 
-  constructor() { }
+	getCallCenterSource(): Observable<CallCenterSource[]> {
+		return this.http.get<CallCenterSource[]>('CallCenterSources');
+	}
 }

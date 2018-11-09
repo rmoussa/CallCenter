@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { MatTableDataSource, MatPaginator, MatSort } from '@angular/material';
+import { CustomerService } from './customer.service';
 
 @Component({
   selector: 'm-customer',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
+  dataSource;
+	displayedColumns = ['id', 'name', 'nameEn'];
+	@ViewChild(MatPaginator)
+	paginator: MatPaginator;
+	@ViewChild(MatSort)
+	sort: MatSort;
+	// Filter fields
+	@ViewChild('searchInput')
+	searchInput: ElementRef;
 
-  ngOnInit() {
-  }
+	constructor(private customerService: CustomerService) {}
+
+	ngOnInit() {
+		this.customerService.getCustomer().subscribe(result => {
+			if (!result) {
+				return;
+			}
+			console.log(result);
+			this.dataSource = new MatTableDataSource(result);
+			this.dataSource.sort = this.sort;
+		});
+	}
 
 }

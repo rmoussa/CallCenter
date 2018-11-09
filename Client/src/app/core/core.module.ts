@@ -17,6 +17,8 @@ import { GetObjectPipe } from './pipes/get-object.pipe';
 import { ConsoleLogPipe } from './pipes/console-log.pipe';
 import { SafePipe } from './pipes/safe.pipe';
 import { PortletDirective } from './directives/portlet.directive';
+import { ApiPrefixInterceptor } from './services/api-prefix-interceptor.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
 	imports: [CommonModule],
@@ -62,6 +64,12 @@ import { PortletDirective } from './directives/portlet.directive';
 		ConsoleLogPipe,
 		SafePipe
 	],
-	providers: []
+	providers: [
+		{
+			provide: HTTP_INTERCEPTORS,
+			useClass: ApiPrefixInterceptor,
+			multi: true
+		}
+	]
 })
 export class CoreModule {}

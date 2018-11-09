@@ -50,6 +50,10 @@ const routes: Routes = [
 			{
 				path: 'lookups',
 				loadChildren: './lookups/lookups.module#LookupsModule'
+			},
+			{
+				path: 'reports',
+				loadChildren: './reports/reports.module#ReportsModule'
 			}
 		]
 	},
