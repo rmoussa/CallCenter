@@ -10,8 +10,7 @@ export const environment = {
   version: env.npm_package_version + '-dev',
   serverUrl: 'http://posdata.falcon-universal.com/api/',
   loginUrl: 'http://localhost:9000/auth',
-  serverJoke: 'https://api.chucknorris.io',
-  apiToken: 'EraApi',
+  apiToken: 'CallCenter',
   defaultLanguage: 'en-US',
   supportedLanguages: [
     'en-US',

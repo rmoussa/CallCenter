@@ -21,7 +21,8 @@ import {
 	MatProgressSpinnerModule,
 	MatSnackBarModule,
 	MatTabsModule,
-	MatTooltipModule
+	MatTooltipModule,
+	MatDialogModule
 } from '@angular/material';
 import { UnitService } from './unit/unit.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -45,7 +46,7 @@ import { UnitEditComponent } from './unit/unit-edit/unit-edit.component';
 import { PartialsModule } from '../../partials/partials.module';
 import { HttpUtilsService } from '../../../core/services/http-utils.service';
 import { LayoutUtilsService } from './_core/utils/layout-utils.service';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AlertComponent } from './_shared/alert/alert.component';
 import { ActionNotificationComponent } from './_shared/action-natification/action-notification.component';
 import { DeleteEntityDialogComponent } from './_shared/delete-entity-dialog/delete-entity-dialog.component';
@@ -59,7 +60,7 @@ import { ProductCat3EditComponent } from './product-cat3/product-cat3-edit/produ
 import { ProductCat4EditComponent } from './product-cat4/product-cat4-edit/product-cat4-edit.component';
 import { UpdateStatusDialogComponent } from './_shared/update-status-dialog/update-status-dialog.component';
 import { FetchEntityDialogComponent } from './_shared/fetch-entity-dialog/fetch-entity-dialog.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 
 const routes: Routes = [
 	{
@@ -150,9 +151,14 @@ const routes: Routes = [
 
 @NgModule({
 	imports: [
+		MatDialogModule,
 		CommonModule,
 		RouterModule.forChild(routes),
 		HttpClientModule,
+		PartialsModule,
+		FormsModule,
+		ReactiveFormsModule,
+		TranslateModule.forChild(),
 		MatButtonModule,
 		MatMenuModule,
 		MatSelectModule,
@@ -172,12 +178,11 @@ const routes: Routes = [
 		MatSnackBarModule,
 		MatTabsModule,
 		MatTooltipModule,
-		PartialsModule,
-		ReactiveFormsModule
+		PartialsModule
 	],
 	entryComponents: [
 		ActionNotificationComponent,
-		DeleteEntityDialogComponent,
+		DeleteEntityDialogComponent
 		// FetchEntityDialogComponent,
 		// UpdateStatusDialogComponent
 	],
@@ -204,7 +209,7 @@ const routes: Routes = [
 		ProductCat3EditComponent,
 		ProductCat4EditComponent,
 		FetchEntityDialogComponent,
-		UpdateStatusDialogComponent,
+		UpdateStatusDialogComponent
 	],
 	exports: [RouterModule],
 	providers: [

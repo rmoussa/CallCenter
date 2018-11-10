@@ -22,6 +22,7 @@ export class BranchEditComponent implements OnInit {
 	loadingSubject = new BehaviorSubject<boolean>(false);
 	loading$ = this.loadingSubject.asObservable();
 	hasFormErrors: boolean;
+	selectedTab: number = 0;
 
 	constructor(
 		private activatedRoute: ActivatedRoute,
