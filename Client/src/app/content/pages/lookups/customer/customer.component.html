@@ -1,18 +1,55 @@
 <div>
-    <mat-table [dataSource]="dataSource" matSort>
-      <ng-container matColumnDef="id">
-        <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
-        <mat-cell *matCellDef="let customer">{{customer.id}}</mat-cell>
-      </ng-container>
-      <ng-container matColumnDef="name">
-        <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
-        <mat-cell *matCellDef="let customer">{{customer.name}}</mat-cell>
-      </ng-container>
-      <ng-container matColumnDef="nameEn">
-        <mat-header-cell *matHeaderCellDef mat-sort-header>Name En</mat-header-cell>
-        <mat-cell *matCellDef="let customer">{{customer.nameEn}}</mat-cell>
-      </ng-container>
-      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-    </mat-table>
-  </div>
+  <mat-table [dataSource]="dataSource" matSort>
+    <ng-container mPortletHeadTitle>
+      <div class="m-portlet__head-title">
+        <h3 class="m-portlet__head-text">
+          Customer list
+        </h3>
+      </div>
+    </ng-container>
+    <ng-container mPortletHeadTools>
+      <a [routerLink]="['/lookups/customer/add']" mat-raised-button color="primary" matTooltip="Create new customer">New
+        Customer</a>
+    </ng-container>
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.id}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="code">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Code</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.code}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phone1">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Phone1</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.phone1}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phone2">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Phone2</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.phone2}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phone3">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>phone3</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{customer.phone3}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+        Actions
+      </mat-header-cell>
+      <mat-cell *matCellDef="let unit">
+        <a [routerLink]="['/lookups/unit/edit']" [queryParams]="{id: unit.id}" mat-icon-button color="primary"
+          matTooltip="Edit unit">
+          <mat-icon>create</mat-icon>
+        </a>&nbsp;
+        <button mat-icon-button color="warn" type="button" (click)="deleteUnit(unit)" matTooltip="Delete unit">
+          <mat-icon>delete</mat-icon>
+        </button>&nbsp;
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>

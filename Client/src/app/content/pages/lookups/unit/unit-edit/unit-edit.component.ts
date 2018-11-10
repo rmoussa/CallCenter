@@ -58,7 +58,7 @@ export class UnitEditComponent implements OnInit {
 
 	createForm() {
 		this.unitForm = this.myFB.group({
-			id: [this.unit.id, Validators.required],
+			id: [{ value: this.unit.id, disabled: true }, Validators.required],
 			name: [this.unit.name, Validators.required],
 			nameEn: [this.unit.nameEn, Validators.required]
 		});
@@ -146,9 +146,9 @@ export class UnitEditComponent implements OnInit {
 				this.refreshUnit(_unit.id);
 			}
 		});
-  }
+	}
 
-  addUnit(_product: Unit, withBack: boolean = false) {
+	addUnit(_product: Unit, withBack: boolean = false) {
 		this.loadingSubject.next(true);
 		this.unitService.createUnit(_product).subscribe(res => {
 			this.loadingSubject.next(false);
@@ -156,7 +156,13 @@ export class UnitEditComponent implements OnInit {
 				this.goBack(res.id);
 			} else {
 				const message = `New product successfully has been added.`;
-				this.layoutUtilsService.showActionNotification(message, MessageType.Create, 10000, true, false);
+				this.layoutUtilsService.showActionNotification(
+					message,
+					MessageType.Create,
+					10000,
+					true,
+					false
+				);
 				this.refreshUnit(res.id);
 			}
 		});

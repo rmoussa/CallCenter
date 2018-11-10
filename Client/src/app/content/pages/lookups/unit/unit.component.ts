@@ -59,11 +59,11 @@ export class UnitComponent implements OnInit {
 					_deleteMessage,
 					MessageType.Delete
 				);
-				this.loadProductsList();
+				this.loadUnitsList();
 			});
 		});
 	}
-	loadProductsList() {
+	loadUnitsList() {
 		this.unitService.getUnit().subscribe(result => {
 			if (!result) {
 				return;

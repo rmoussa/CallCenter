@@ -8,7 +8,7 @@ import { env } from 'process';
 export const environment = {
   production: false,
   version: env.npm_package_version + '-dev',
-  serverUrl: 'http://localhost:49171/api/',
+  serverUrl: 'http://posdata.falcon-universal.com/api/',
   loginUrl: 'http://localhost:9000/auth',
   serverJoke: 'https://api.chucknorris.io',
   apiToken: 'EraApi',

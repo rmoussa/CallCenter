@@ -50,6 +50,15 @@ import { AlertComponent } from './_shared/alert/alert.component';
 import { ActionNotificationComponent } from './_shared/action-natification/action-notification.component';
 import { DeleteEntityDialogComponent } from './_shared/delete-entity-dialog/delete-entity-dialog.component';
 import { BranchEditComponent } from './branch/branch-edit/branch-edit.component';
+import { CallCenterSourceEditComponent } from './call-center-source/call-center-source-edit/call-center-source-edit.component';
+import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
+import { EmployeeEditComponent } from './employee/employee-edit/employee-edit.component';
+import { ProductCat1EditComponent } from './product-cat1/product-cat1-edit/product-cat1-edit.component';
+import { ProductCat2EditComponent } from './product-cat2/product-cat2-edit/product-cat2-edit.component';
+import { ProductCat3EditComponent } from './product-cat3/product-cat3-edit/product-cat3-edit.component';
+import { ProductCat4EditComponent } from './product-cat4/product-cat4-edit/product-cat4-edit.component';
+import { UpdateStatusDialogComponent } from './_shared/update-status-dialog/update-status-dialog.component';
+import { FetchEntityDialogComponent } from './_shared/fetch-entity-dialog/fetch-entity-dialog.component';
 
 
 const routes: Routes = [
@@ -74,8 +83,32 @@ const routes: Routes = [
 		component: BranchComponent
 	},
 	{
+		path: 'branch/add',
+		component: BranchEditComponent
+	},
+	{
+		path: 'branch/edit',
+		component: BranchEditComponent
+	},
+	{
+		path: 'branch/edit/:id',
+		component: BranchEditComponent
+	},
+	{
 		path: 'customer',
 		component: CustomerComponent
+	},
+	{
+		path: 'customer/add',
+		component: CustomerEditComponent
+	},
+	{
+		path: 'customer/edit',
+		component: CustomerEditComponent
+	},
+	{
+		path: 'customer/edit/:id',
+		component: CustomerEditComponent
 	},
 	{
 		path: 'employee',
@@ -84,6 +117,18 @@ const routes: Routes = [
 	{
 		path: 'call-center-source',
 		component: CallCenterSourceComponent
+	},
+	{
+		path: 'callCenterSource/add',
+		component: CallCenterSourceEditComponent
+	},
+	{
+		path: 'callCenterSource/edit',
+		component: CallCenterSourceEditComponent
+	},
+	{
+		path: 'callCenterSource/edit/:id',
+		component: CallCenterSourceEditComponent
 	},
 	{
 		path: 'product-cat1',
@@ -151,8 +196,15 @@ const routes: Routes = [
 		ActionNotificationComponent,
 		DeleteEntityDialogComponent,
 		BranchEditComponent,
-		// FetchEntityDialogComponent,
-		// UpdateStatusDialogComponent,
+		CallCenterSourceEditComponent,
+		CustomerEditComponent,
+		EmployeeEditComponent,
+		ProductCat1EditComponent,
+		ProductCat2EditComponent,
+		ProductCat3EditComponent,
+		ProductCat4EditComponent,
+		FetchEntityDialogComponent,
+		UpdateStatusDialogComponent,
 	],
 	exports: [RouterModule],
 	providers: [

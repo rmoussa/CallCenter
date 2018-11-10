@@ -35,9 +35,10 @@ export class UnitService {
 	updateUnit(unit: Unit): Observable<any> {
 		// Note: Add headers if needed (tokens/bearer)
 		const httpHeaders = this.httpUtils.getHTTPHeaders();
-		return this.http.put(API_UNITS_URL, unit, {
+		return this.http.put(`${API_UNITS_URL}/${unit.id}`, unit, {
 			headers: httpHeaders
 		});
+
 	}
 
 	// Method from server should return QueryResultsModel(items: any[], totalsCount: number)
